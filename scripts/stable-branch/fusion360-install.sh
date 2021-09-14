@@ -50,7 +50,7 @@ echo -n "$text_1_1"
 read answer
 if [ "$answer" != "${answer#[YyJj]}" ] ;then
     install-requirement &&
-    wmctrl -r ':ACTIVE:' -b toggle,fullscreen &&
+    # wmctrl -r ':ACTIVE:' -b toggle,fullscreen &&
     check-if-fusion360-exists
 else
     exit;
